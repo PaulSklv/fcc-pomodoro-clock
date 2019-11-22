@@ -1,0 +1,74 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: lightslategrey;
+	color: lavender;
+	user-select: none;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	height: 100vh;
+	text-align: center;
+
+	.child {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		.play-pause-undo {
+			height: 40px;
+			margin-top: 15px;
+
+			.undo, .play, .pause {
+				cursor: pointer;
+				font-size: 20px;
+			}
+		}
+		
+
+		.timer-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
+
+			.changer-container {
+				margin: 10px;
+				font-size: 15px;
+	
+				.changer {
+					margin-top: 10px;
+					font-size: 25px;
+
+					i {
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+}
+
+.session {
+	border-radius: 10px;
+	border: 3px solid lavender;
+	width: 130px;
+	padding: 10px;
+	height: 90px;
+	span {
+		font-size: 20px;
+	}
+	.timer {
+		font-size: 35px;
+	}
+}
+
+audio {
+	position: relative;
+	top: -99999px;
+}

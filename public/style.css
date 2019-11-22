@@ -1,0 +1,81 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: lightslategrey;
+  color: lavender;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  height: 100vh;
+  text-align: center; }
+  .container .child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .container .child .play-pause-undo {
+      height: 40px;
+      margin-top: 15px; }
+      .container .child .play-pause-undo .undo, .container .child .play-pause-undo .play, .container .child .play-pause-undo .pause {
+        cursor: pointer;
+        font-size: 20px; }
+    .container .child .timer-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; }
+      .container .child .timer-container .changer-container {
+        margin: 10px;
+        font-size: 15px; }
+        .container .child .timer-container .changer-container .changer {
+          margin-top: 10px;
+          font-size: 25px; }
+          .container .child .timer-container .changer-container .changer i {
+            cursor: pointer; }
+
+.session {
+  border-radius: 10px;
+  border: 3px solid lavender;
+  width: 130px;
+  padding: 10px;
+  height: 90px; }
+  .session span {
+    font-size: 20px; }
+  .session .timer {
+    font-size: 35px; }
+
+audio {
+  position: relative;
+  top: -99999px; }
