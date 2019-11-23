@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Calistoga&display=swap');
+html, body {
+	background-color: #14191c;
+	color: ivory;
+	user-select: none;
+	font-family: 'Calistiga', cursive;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	height: 100vh;
+	text-align: center;
+	transform: scale(1.5);
+
+	h2 {
+		font-family: 'Calistiga', cursive;
+	}
+
+	.child {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		.play-pause-undo {
+			height: 40px;
+			margin-top: 15px;
+
+			.undo, .play, .pause {
+				cursor: pointer;
+				font-size: 20px;
+			}
+		}
+		
+
+		.timer-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
+
+			.changer-container {
+				margin: 10px;
+				font-size: 15px;
+	
+				.changer {
+					margin-top: 10px;
+					font-size: 25px;
+
+					i {
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+}
+
+.session {
+	border-radius: 10px;
+	border: 3px solid ivory;
+	width: 130px;
+	padding: 10px;
+	height: 90px;
+	span {
+		font-size: 20px;
+	}
+	.timer {
+		font-size: 35px;
+	}
+}
+
+audio {
+	position: relative;
+	top: -99999px;
+}
+
+@media (max-width: 35em) {
+	.timer-container {
+		flex-direction: column !important;
+		:nth-child(1) { order: 2; }
+		:nth-child(2) { order: 3; }
+		:nth-child(3) { order: 1; }
+	}
+}

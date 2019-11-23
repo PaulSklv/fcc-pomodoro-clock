@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/fcc-pomodoro-clock/static/js/main.85f87af6.chunk.js",
+    "main.js.map": "/fcc-pomodoro-clock/static/js/main.85f87af6.chunk.js.map",
+    "runtime-main.js": "/fcc-pomodoro-clock/static/js/runtime-main.c9dcae41.js",
+    "runtime-main.js.map": "/fcc-pomodoro-clock/static/js/runtime-main.c9dcae41.js.map",
+    "static/js/2.7b262a91.chunk.js": "/fcc-pomodoro-clock/static/js/2.7b262a91.chunk.js",
+    "static/js/2.7b262a91.chunk.js.map": "/fcc-pomodoro-clock/static/js/2.7b262a91.chunk.js.map",
+    "index.html": "/fcc-pomodoro-clock/index.html",
+    "precache-manifest.2f0d687cd2dbeb73a2f4c12cd9c15d2d.js": "/fcc-pomodoro-clock/precache-manifest.2f0d687cd2dbeb73a2f4c12cd9c15d2d.js",
+    "service-worker.js": "/fcc-pomodoro-clock/service-worker.js"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c9dcae41.js",
+    "static/js/2.7b262a91.chunk.js",
+    "static/js/main.85f87af6.chunk.js"
+  ]
+}

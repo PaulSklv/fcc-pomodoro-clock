@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Calistoga&display=swap");
+html, body {
+  background-color: #14191c;
+  color: ivory;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: 'Calistiga', cursive; }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  height: 100vh;
+  text-align: center;
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5); }
+  .container h2 {
+    font-family: 'Calistiga', cursive; }
+  .container .child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .container .child .play-pause-undo {
+      height: 40px;
+      margin-top: 15px; }
+      .container .child .play-pause-undo .undo, .container .child .play-pause-undo .play, .container .child .play-pause-undo .pause {
+        cursor: pointer;
+        font-size: 20px; }
+    .container .child .timer-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; }
+      .container .child .timer-container .changer-container {
+        margin: 10px;
+        font-size: 15px; }
+        .container .child .timer-container .changer-container .changer {
+          margin-top: 10px;
+          font-size: 25px; }
+          .container .child .timer-container .changer-container .changer i {
+            cursor: pointer; }
+
+.session {
+  border-radius: 10px;
+  border: 3px solid ivory;
+  width: 130px;
+  padding: 10px;
+  height: 90px; }
+  .session span {
+    font-size: 20px; }
+  .session .timer {
+    font-size: 35px; }
+
+audio {
+  position: relative;
+  top: -99999px; }
+
+@media (max-width: 35em) {
+  .timer-container {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important; }
+    .timer-container :nth-child(1) {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2; }
+    .timer-container :nth-child(2) {
+      -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+      order: 3; }
+    .timer-container :nth-child(3) {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1; } }
